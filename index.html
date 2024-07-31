@@ -1,17 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calcolo Prezzo Biglietto</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <h1>Calcola il Prezzo del Biglietto</h1>
-
-  <div class="result" id="result"></div>
-
+  <div class="container">
+    <h1>Calcola il Prezzo del Biglietto</h1>
+    <div class="result">
+      <p>Chilometri: <span id="km"></span></p>
+      <p>Età: <span id="age"></span></p>
+      <p>Prezzo senza sconto: €<span id="priceNoDiscount"></span></p>
+      <p>Prezzo finale: €<span id="finalPrice"></span></p>
+    </div>
+  </div>
   <script src="js/script.js"></script>
 </body>
 

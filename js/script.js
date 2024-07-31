@@ -10,7 +10,7 @@ console.log('Età:', age);
 // Calcola il prezzo del biglietto senza sconto
 const prezzoPerKm = 0.21;
 let prezzoTotale = km * prezzoPerKm;
-const prezzoSenzaSconto = prezzoTotale.toFixed(2); //fiisaggio a due decimali
+const prezzoSenzaSconto = prezzoTotale.toFixed(2); //fissaggio a due decimali
 console.log('Prezzo senza sconto:', prezzoSenzaSconto);
 
 // Applica lo sconto in base all'età
@@ -25,3 +25,13 @@ if (age < 18) {
 // Format il prezzo a due decimali
 const prezzoFinale = prezzoTotale.toFixed(2);
 console.log('Prezzo finale:', prezzoFinale);
+
+// #: Fase di Output
+// Mostra il risultato sulla pagina
+const resultDiv = document.getElementById('result');
+resultDiv.innerHTML = `
+      <p>Chilometri: ${km}</p>
+      <p>Età: ${age}</p>
+      <p>Prezzo senza sconto: €${prezzoSenzaSconto}</p>
+      <p>Prezzo finale: €${prezzoFinale}</p>
+    `;
